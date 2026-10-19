@@ -1,1 +1,208 @@
-J3VzZSBzdHJpY3QnOwovKiA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KICAgUkkgT0lMIENIRUNLIOKAlCBhcHAgbG9naWMKICAgUnVsZXMgZW5mb3JjZWQgaGVyZSAoc2FtZSBzdGFuZGFyZCBhcyB0aGUgc2libGluZyBSSSBSYXRlCiAgIENoZWNrIGJ1aWxkKToKICAgLSBFdmVyeSBwcmljZSBvbiB0aGUgcGFnZSBjb21lcyBmcm9tIGRhdGEvcHJpY2VzLmpzb24sIHdoaWNoCiAgICAgaXMgc291cmNlZCBmcm9tIEVJQSdzIHB1Ymxpc2hlZCBTSE9QUCBzZXJpZXMgKFdlZWtseSBIZWF0aW5nCiAgICAgT2lsIGFuZCBQcm9wYW5lIFByaWNlcykuIE5vdGhpbmcgaXMgaGFyZC1jb2RlZCBleGNlcHQgdGhlCiAgICAgZG9jdW1lbnRlZCBkaXNwZXJzaW9uIG9mZnNldHMgKDEw4oCTNTDCoiBidXlpbmctZ3JvdXAgcmFuZ2U7CiAgICAgMzDigJM3MMKiIGRlZXBlc3QgQ09EIHBvc3RpbmdzKSwgYW5kIHRob3NlIGFyZSBsYWJlbGVkIG9uIHRoZQogICAgIHBhZ2UgYXMgZG9jdW1lbnRlZCByYW5nZXMgLyBjb21wdXRlZCBndWlkZXMg4oCUIG5ldmVyIGFzIGxpdmUKICAgICBkZWFsZXIgcHJpY2VzLgogICAtIEFueSBmaWVsZCB0aGUgSlNPTiBzdG9yZXMgYXMgbnVsbCByZW5kZXJzIGFzCiAgICAgIm5vdCBjb25maXJtZWQiIOKAlCBmb2xsb3dpbmcgdGhlIGVsZWN0cmljaXR5IHNpdGUncyBwYXR0ZXJuLgogICAgIElmIGEgYmVuY2htYXJrIGZpZ3VyZSBjYW5ub3QgYmUgdmVyaWZpZWQsIHRoZSBzaXRlIHNheXMgc28KICAgICBpbnN0ZWFkIG9mIGVzdGltYXRpbmcgb25lLgogICAtIFByaW9yLXdlZWsgYW5kIHllYXItYWdvIHZhbHVlcyBzdG9yZWQgaW4gdGhlIEpTT04gYXJlCiAgICAgREVSSVZFRCBmcm9tIEVJQSdzIHB1Ymxpc2hlZCBjaGFuZ2UgY29sdW1ucyAoY3VycmVudCB2YWx1ZQogICAgIG1pbnVzIHRoZSBwdWJsaXNoZWQgY2hhbmdlKSBhbmQgYXJlIGxhYmVsZWQgYXMgZGVyaXZlZCBvbgogICAgIHRoZSBwYWdlOyBFSUEgbWF5IHJldmlzZSBwcmlvci13ZWVrIHZhbHVlcy4KICAgLSBObyBkZWFsZXIgbGlzdGluZ3MsIG5vIGRlYWxlci1hdHRyaWJ1dGVkIHByaWNlcywgbm8KICAgICByZWZlcnJhbC9hZmZpbGlhdGUgbGlua3MsIG5vIGVucm9sbG1lbnQgb3Igb3JkZXIgYnV0dG9ucy4KICAgPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09ICovCgpmdW5jdGlvbiBmbXRQcmljZShuKSB7CiAgLy8gNi4zMDQgLT4gIiQ2LjMwIiAoZGlzcGxheSksIGZ1bGwgcHJlY2lzaW9uIGhhbmRsZWQgYnkgZm10UHJpY2UzCiAgcmV0dXJuICckJyArIE51bWJlcihuKS50b0ZpeGVkKDIpOwp9CgpmdW5jdGlvbiBmbXRQcmljZTMobikgewogIC8vIEVJQSBwdWJsaXNoZXMgdG8gMyBkZWNpbWFsczogNi4zMDQgLT4gIiQ2LjMwNCIKICByZXR1cm4gJyQnICsgTnVtYmVyKG4pLnRvRml4ZWQoMyk7Cn0KCmZ1bmN0aW9uIGZtdENoYW5nZShuKSB7CiAgLy8gc2lnbmVkIGRvbGxhcnMgLT4gIisxNy44wqIiIHVuZGVyIGEgZG9sbGFyLCAiKyQyLjY3IiBhdC9hYm92ZQogIGlmIChuID09PSBudWxsIHx8IG4gPT09IHVuZGVmaW5lZCkgcmV0dXJuICdub3QgY29uZmlybWVkJzsKICBjb25zdCBzaWduID0gbiA8IDAgPyAn4oiSJyA6ICcrJzsKICBjb25zdCBhYnMgPSBNYXRoLmFicyhuKTsKICBpZiAoYWJzIDwgMSkgcmV0dXJuIHNpZ24gKyAoYWJzICogMTAwKS50b0ZpeGVkKDEpICsgJ8KiJzsKICByZXR1cm4gc2lnbiArICckJyArIGFicy50b0ZpeGVkKDIpOwp9CgpmdW5jdGlvbiBvck5vdENvbmZpcm1lZCh2LCBmb3JtYXQpIHsKICBpZiAodiA9PT0gbnVsbCB8fCB2ID09PSB1bmRlZmluZWQpIHJldHVybiAnbm90IGNvbmZpcm1lZCc7CiAgcmV0dXJuIGZvcm1hdCA/IGZvcm1hdCh2KSA6IFN0cmluZyh2KTsKfQoKZnVuY3Rpb24gZm10RGF0ZUxvbmcoaXNvKSB7CiAgLy8gIjIwMjYtMTAtMTIiIC0+ICJNb25kYXksIE9jdG9iZXIgMTIsIDIwMjYiIChVVEMtc2FmZSkKICBpZiAoIWlzbykgcmV0dXJuICdub3QgY29uZmlybWVkJzsKICBjb25zdCBtb250aHMgPSBbJ0phbnVhcnknLCAnRmVicnVhcnknLCAnTWFyY2gnLCAnQXByaWwnLCAnTWF5JywgJ0p1bmUnLAogICAgJ0p1bHknLCAnQXVndXN0JywgJ1NlcHRlbWJlcicsICdPY3RvYmVyJywgJ05vdmVtYmVyJywgJ0RlY2VtYmVyJ107CiAgY29uc3QgZGF5cyA9IFsnU3VuZGF5JywgJ01vbmRheScsICdUdWVzZGF5JywgJ1dlZG5lc2RheScsICdUaHVyc2RheScsICdGcmlkYXknLCAnU2F0dXJkYXknXTsKICBjb25zdCBkID0gbmV3IERhdGUoaXNvICsgJ1QwMDowMDowMFonKTsKICBpZiAoaXNOYU4oZC5nZXRUaW1lKCkpKSByZXR1cm4gaXNvOwogIHJldHVybiBkYXlzW2QuZ2V0VVRDRGF5KCldICsgJywgJyArIG1vbnRoc1tkLmdldFVUQ01vbnRoKCldICsgJyAnICsKICAgIGQuZ2V0VVRDRGF0ZSgpICsgJywgJyArIGQuZ2V0VVRDRnVsbFllYXIoKTsKfQoKZnVuY3Rpb24gZm10RGF0ZVNob3J0KGlzbykgewogIGlmICghaXNvKSByZXR1cm4gJ25vdCBjb25maXJtZWQnOwogIGNvbnN0IG1vbnRocyA9IFsnSmFuJywgJ0ZlYicsICdNYXInLCAnQXByJywgJ01heScsICdKdW4nLAogICAgJ0p1bCcsICdBdWcnLCAnU2VwJywgJ09jdCcsICdOb3YnLCAnRGVjJ107CiAgY29uc3QgZCA9IG5ldyBEYXRlKGlzbyArICdUMDA6MDA6MDBaJyk7CiAgaWYgKGlzTmFOKGQuZ2V0VGltZSgpKSkgcmV0dXJuIGlzbzsKICByZXR1cm4gbW9udGhzW2QuZ2V0VVRDTW9udGgoKV0gKyAnICcgKyBkLmdldFVUQ0RhdGUoKSArICcsICcgKyBkLmdldFVUQ0Z1bGxZZWFyKCk7Cn0KCi8qID09PT09PT09PT09PSBicm93c2VyLW9ubHkgcmVuZGVyaW5nIGJlbG93ID09PT09PT09PT09PSAqLwoKZnVuY3Rpb24gcmxpbmUoaywgdiwgdmNscykgewogIHJldHVybiAnPGRpdiBjbGFzcz0icmxpbmUiPjxzcGFuIGNsYXNzPSJrIj4nICsgayArICc8L3NwYW4+PHNwYW4gY2xhc3M9ImRvdHMiPjwvc3Bhbj4nICsKICAgICc8c3BhbiBjbGFzcz0idicgKyAodmNscyA/ICcgJyArIHZjbHMgOiAnJykgKyAnIj4nICsgdiArICc8L3NwYW4+PC9kaXY+JzsKfQoKZnVuY3Rpb24gcmVuZGVySGVybyhvaWwpIHsKICBpZiAoIW9pbCB8fCBvaWwudmFsdWUgPT09IG51bGwgfHwgb2lsLnZhbHVlID09PSB1bmRlZmluZWQpIHsKICAgIHJldHVybiAnPHAgY2xhc3M9Imhlcm8tcHJpY2UiPlJJIEFWRVJBR0UgVEhJUyBXRUVLIOKAlCBub3QgY29uZmlybWVkPC9wPicgKwogICAgICAnPHAgY2xhc3M9Indhcm5pbmctYm94Ij48c3Ryb25nPkJFTkNITUFSSyBOT1QgQ09ORklSTUVEOjwvc3Ryb25nPiB0aGUgY3VycmVudCBSSSByZXNpZGVudGlhbCAnICsKICAgICAgJ2hlYXRpbmcgb2lsIGZpZ3VyZSBjb3VsZCBub3QgYmUgdmVyaWZpZWQgb24gRUlBJnJzcXVvO3MgcHVibGlzaGVkIHNlcmllcyB0aGlzIHdlZWsuIFNlZSB0aGUgJyArCiAgICAgICdFSUEgc2VyaWVzIGRpcmVjdGx5OiA8YSBocmVmPSJodHRwczovL3d3dy5laWEuZ292L2RuYXYvcGV0L1BFVF9QUklfV0ZSX0RDVVNfU1JJX1cuaHRtIiByZWw9Im5vb3BlbmVyIj4nICsKICAgICAgJ0VJQSDigJQgUmhvZGUgSXNsYW5kIFdlZWtseSBIZWF0aW5nIE9pbCBhbmQgUHJvcGFuZSBQcmljZXM8L2E+LiBXZSBuZXZlciBlc3RpbWF0ZSB0aGlzIG51bWJlci48L3A+JzsKICB9CiAgcmV0dXJuICc8cCBjbGFzcz0iaGVyby1wcmljZSI+UkkgQVZFUkFHRSBUSElTIFdFRUsg4oCUICcgKyBmbXRQcmljZShvaWwudmFsdWUpICsgJy9nYWwnICsKICAgICcgPHNwYW4gY2xhc3M9Im5vdGUiPihyZXNpZGVudGlhbCBoZWF0aW5nIG9pbCk8L3NwYW4+PC9wPicgKwogICAgJzxkaXYgY2xhc3M9InJlYWRvdXQiPicgKwogICAgcmxpbmUoJ0FTIE9GIChDT0xMRUNURUQpJywgZm10RGF0ZUxvbmcob2lsLndlZWtfb2YpLCAnaG90JykgKwogICAgcmxpbmUoJ1BVQkxJU0hFRCcsIGZtdERhdGVMb25nKG9pbC5wdWJsaXNoZWQpKSArCiAgICBybGluZSgnRlVMTC1QUkVDSVNJT04gRklHVVJFJywgZm10UHJpY2UzKG9pbC52YWx1ZSkgKyAnL2dhbCcpICsKICAgIHJsaW5lKCdTT1VSQ0UnLCAnRUlBIOKAlCBXZWVrbHkgSGVhdGluZyBPaWwgYW5kIFByb3BhbmUgUHJpY2VzIChTSE9QUCknKSArCiAgICAnPC9kaXY+JzsKfQoKZnVuY3Rpb24gcmVuZGVyVHJlbmQoZGF0YSkgewogIGNvbnN0IG9pbCA9IGRhdGEuaGVhdGluZ19vaWwgfHwge307CiAgY29uc3Qgd3MgPSBkYXRhLndob2xlc2FsZV9oZWF0aW5nX29pbCB8fCB7fTsKICBsZXQgaHRtbCA9ICcnOwogIGh0bWwgKz0gcmxpbmUoJ1RISVMgV0VFSyAoJyArIGZtdERhdGVTaG9ydChvaWwud2Vla19vZikudG9VcHBlckNhc2UoKSArICcpJywKICAgIG9yTm90Q29uZmlybWVkKG9pbC52YWx1ZSwgdiA9PiBmbXRQcmljZTModikgKyAnL2dhbCcpLCAnaG90Jyk7CiAgaHRtbCArPSBybGluZSgnTEFTVCBXRUVLJywgb3JOb3RDb25maXJtZWQob2lsLnByaW9yX3dlZWtfdmFsdWUsIHYgPT4gZm10UHJpY2UzKHYpICsgJy9nYWwgKGRlcml2ZWQg4oCUIHNlZSBub3RlKScpKTsKICBodG1sICs9IHJsaW5lKCdDSEFOR0UgVlMgTEFTVCBXRUVLJywgZm10Q2hhbmdlKG9pbC5jaGFuZ2VfdnNfcHJpb3Jfd2VlayksCiAgICAob2lsLmNoYW5nZV92c19wcmlvcl93ZWVrIHx8IDApID4gMCA/ICdiYWQnIDogJycpOwogIGh0bWwgKz0gcmxpbmUoJ1NBTUUgV0VFSyBMQVNUIFlFQVInLCBvck5vdENvbmZpcm1lZChvaWwueWVhcl9hZ29fdmFsdWUsIHYgPT4gZm10UHJpY2UzKHYpICsgJy9nYWwgKGRlcml2ZWQg4oCUIHNlZSBub3RlKScpKTsKICBodG1sICs9IHJsaW5lKCdDSEFOR0UgVlMgTEFTVCBZRUFSJywgZm10Q2hhbmdlKG9pbC5jaGFuZ2VfdnNfeWVhcl9hZ28pLAogICAgKG9pbC5jaGFuZ2VfdnNfeWVhcl9hZ28gfHwgMCkgPiAwID8gJ2JhZCcgOiAnJyk7CiAgaHRtbCArPSBybGluZSgnUkkgV0hPTEVTQUxFIChDT05URVhUIE9OTFkg4oCUIE5PVCBBIFJFVEFJTCBQUklDRSknLAogICAgb3JOb3RDb25maXJtZWQod3MudmFsdWUsIHYgPT4gZm10UHJpY2UzKHYpICsgJy9nYWwnKSk7CiAgaHRtbCArPSAnPHAgY2xhc3M9Im5vdGUiPiZndDsgJmxkcXVvO0Rlcml2ZWQmcmRxdW87IHZhbHVlcyBhcmUgYXJpdGhtZXRpYyBvbiBFSUEmcnNxdW87cyBvd24gcHVibGlzaGVkICcgKwogICAgJ2NoYW5nZSBjb2x1bW5zICh0aGlzIHdlZWsmcnNxdW87cyB2YWx1ZSBtaW51cyB0aGUgcHVibGlzaGVkIGNoYW5nZSksIG5vdCBzZXBhcmF0ZSBzdXJ2ZXkgZmlndXJlcy4gJyArCiAgICAnRUlBIG5vdGVzIHRoYXQgdmFsdWVzIGZvciB0aGUgcHJldmlvdXMgd2VlayBtYXkgYmUgcmV2aXNlZCB0byBhY2NvdW50IGZvciBsYXRlIHN1Ym1pc3Npb25zIGFuZCAnICsKICAgICdjb3JyZWN0aW9ucy4gV2hvbGVzYWxlIGlzIHNob3duIG9ubHkgYXMgYSBkaXJlY3Rpb24gaW5kaWNhdG9yIOKAlCBpdCBpcyBuZXZlciBibGVuZGVkIGludG8gdGhlICcgKwogICAgJ3JldGFpbCBiZW5jaG1hcmssIGFuZCBubyBob3VzZWhvbGQgY2FuIGJ1eSBhdCB0aGUgd2hvbGVzYWxlIHByaWNlLjwvcD4nOwogIHJldHVybiBodG1sOwp9CgpmdW5jdGlvbiBiYW5kUmFuZ2UoYmVuY2hWYWx1ZSwgYmFuZCkgewogIGlmIChiZW5jaFZhbHVlID09PSBudWxsIHx8IGJlbmNoVmFsdWUgPT09IHVuZGVmaW5lZCkgcmV0dXJuICdub3QgY29uZmlybWVkJzsKICBpZiAoYmFuZC5vZmZzZXRfbG93ID09PSAwIHx8IGJhbmQub2Zmc2V0X2xvdyA9PT0gbnVsbCkgewogICAgcmV0dXJuIGZtdFByaWNlKGJlbmNoVmFsdWUpICsgJy9nYWwgYW5kIHVwJzsKICB9CiAgY29uc3QgbG93ID0gYmVuY2hWYWx1ZSArIGJhbmQub2Zmc2V0X2xvdzsKICBjb25zdCBoaWdoID0gYmVuY2hWYWx1ZSArIGJhbmQub2Zmc2V0X2hpZ2g7CiAgcmV0dXJuIGZtdFByaWNlKGxvdykgKyAnIOKAkyAnICsgZm10UHJpY2UoaGlnaCkgKyAnL2dhbCc7Cn0KCmZ1bmN0aW9uIHJlbmRlckJhbmRzKGRhdGEpIHsKICBjb25zdCBiZW5jaCA9IGRhdGEuaGVhdGluZ19vaWwgPyBkYXRhLmhlYXRpbmdfb2lsLnZhbHVlIDogbnVsbDsKICBjb25zdCBiYW5kcyA9IChkYXRhLmZhaXJfcHJpY2VfYmFuZHMgJiYgZGF0YS5mYWlyX3ByaWNlX2JhbmRzLmJhbmRzKSB8fCBbXTsKICBsZXQgaHRtbCA9ICcnOwogIGJhbmRzLmZvckVhY2goYiA9PiB7CiAgICBjb25zdCB0eXBlQmFkZ2UgPSBiLmJhc2lzX3R5cGUgPT09ICdkb2N1bWVudGVkIHJhbmdlJwogICAgICA/ICc8c3BhbiBjbGFzcz0iYmFkZ2Ugb2siPkRPQ1VNRU5URUQgUkFOR0U8L3NwYW4+JwogICAgICA6ICc8c3BhbiBjbGFzcz0iYmFkZ2Ugd2FybiI+Q09NUFVURUQgR1VJREU8L3NwYW4+JzsKICAgIGh0bWwgKz0gJzxhcnRpY2xlIGNsYXNzPSJjYXJkIj4nICsKICAgICAgJzxkaXYgY2xhc3M9ImNhcmQtdG9wIj48c3BhbiBjbGFzcz0iY2FyZC1uYW1lIj4nICsgYi5sYWJlbCArICc8L3NwYW4+JyArCiAgICAgICc8c3BhbiBjbGFzcz0iYmFuZC1yYW5nZSI+JyArIGJhbmRSYW5nZShiZW5jaCwgYikgKyAnPC9zcGFuPjwvZGl2PicgKwogICAgICAnPGRpdj4nICsgdHlwZUJhZGdlICsKICAgICAgJzxzcGFuIGNsYXNzPSJiYWRnZSI+Tk9UIEEgTElWRSBERUFMRVIgUFJJQ0U8L3NwYW4+PC9kaXY+JyArCiAgICAgICc8cD4nICsgYi5kZXNjcmlwdGlvbiArICc8L3A+JyArCiAgICAgICc8cCBjbGFzcz0ibm90ZSI+U291cmNlOiA8YSBocmVmPSInICsgYi5zb3VyY2VfdXJsICsgJyIgcmVsPSJub29wZW5lciI+JyArIGIuc291cmNlX25hbWUgKyAnPC9hPjwvcD4nICsKICAgICAgJzwvYXJ0aWNsZT4nOwogIH0pOwogIGlmIChkYXRhLmZhaXJfcHJpY2VfYmFuZHMgJiYgZGF0YS5mYWlyX3ByaWNlX2JhbmRzLm5vdGUpIHsKICAgIGh0bWwgKz0gJzxwIGNsYXNzPSJub3RlIj4nICsgZGF0YS5mYWlyX3ByaWNlX2JhbmRzLm5vdGUgKyAnPC9wPic7CiAgfQogIHJldHVybiBodG1sOwp9CgpmdW5jdGlvbiByZW5kZXJQcm9wYW5lKHApIHsKICBpZiAoIXAgfHwgcC52YWx1ZSA9PT0gbnVsbCB8fCBwLnZhbHVlID09PSB1bmRlZmluZWQpIHsKICAgIHJldHVybiAnPHAgY2xhc3M9ImJpZyI+PHN0cm9uZz5SSSByZXNpZGVudGlhbCBwcm9wYW5lIGJlbmNobWFyazogbm90IGNvbmZpcm1lZCDigJQgc2VlIEVJQSBzZXJpZXMuPC9zdHJvbmc+ICcgKwogICAgICAnVGhlIGN1cnJlbnQgUkkgcHJvcGFuZSBmaWd1cmUgY291bGQgbm90IGJlIHZlcmlmaWVkIG9uIEVJQSZyc3F1bztzIHB1Ymxpc2hlZCBzZXJpZXMgdGhpcyB3ZWVrLCBzbyB0aGlzICcgKwogICAgICAnc2l0ZSBwcmludHMgbm8gbnVtYmVyIHJhdGhlciB0aGFuIGFuIGVzdGltYXRlLiBUaGUgc2VyaWVzIGl0c2VsZjogJyArCiAgICAgICc8YSBocmVmPSJodHRwczovL3d3dy5laWEuZ292L2RuYXYvcGV0L1BFVF9QUklfV0ZSX0RDVVNfU1JJX1cuaHRtIiByZWw9Im5vb3BlbmVyIj5FSUEg4oCUIFJob2RlIElzbGFuZCAnICsKICAgICAgJ1dlZWtseSBIZWF0aW5nIE9pbCBhbmQgUHJvcGFuZSBQcmljZXM8L2E+LiBFdmVyeXRoaW5nIGJlbG93IGFib3V0IHlvdXIgbGVnYWwgcmlnaHRzIHN0YW5kcyByZWdhcmRsZXNzICcgKwogICAgICAnb2YgdGhlIGJlbmNobWFyay48L3A+JzsKICB9CiAgcmV0dXJuICc8cCBjbGFzcz0iYmlnIj5UaGUgc2FtZSBTSE9QUCBzdXJ2ZXkgcHVibGlzaGVzIG9uZSBzdGF0ZXdpZGUgYXZlcmFnZSBmb3IgPHN0cm9uZz5yZXNpZGVudGlhbCAnICsKICAgICdwcm9wYW5lPC9zdHJvbmc+OjwvcD4nICsKICAgICc8cCBjbGFzcz0iaGVyby1wcmljZSI+UkkgUFJPUEFORSBBVkVSQUdFIOKAlCAnICsgZm10UHJpY2UocC52YWx1ZSkgKyAnL2dhbDwvcD4nICsKICAgICc8ZGl2IGNsYXNzPSJyZWFkb3V0Ij4nICsKICAgIHJsaW5lKCdBUyBPRiAoQ09MTEVDVEVEKScsIGZtdERhdGVMb25nKHAud2Vla19vZiksICdob3QnKSArCiAgICBybGluZSgnUFVCTElTSEVEJywgZm10RGF0ZUxvbmcocC5wdWJsaXNoZWQpKSArCiAgICBybGluZSgnRlVMTC1QUkVDSVNJT04gRklHVVJFJywgZm10UHJpY2UzKHAudmFsdWUpICsgJy9nYWwnKSArCiAgICBybGluZSgnTEFTVCBXRUVLJywgb3JOb3RDb25maXJtZWQocC5wcmlvcl93ZWVrX3ZhbHVlLCB2ID0+IGZtdFByaWNlMyh2KSArICcvZ2FsIChkZXJpdmVkKScpKSArCiAgICBybGluZSgnQ0hBTkdFIFZTIExBU1QgV0VFSycsIGZtdENoYW5nZShwLmNoYW5nZV92c19wcmlvcl93ZWVrKSwKICAgICAgKHAuY2hhbmdlX3ZzX3ByaW9yX3dlZWsgfHwgMCkgPiAwID8gJ2JhZCcgOiAnJykgKwogICAgcmxpbmUoJ1NBTUUgV0VFSyBMQVNUIFlFQVInLCBvck5vdENvbmZpcm1lZChwLnllYXJfYWdvX3ZhbHVlLCB2ID0+IGZtdFByaWNlMyh2KSArICcvZ2FsIChkZXJpdmVkKScpKSArCiAgICBybGluZSgnQ0hBTkdFIFZTIExBU1QgWUVBUicsIGZtdENoYW5nZShwLmNoYW5nZV92c195ZWFyX2FnbyksCiAgICAgIChwLmNoYW5nZV92c195ZWFyX2FnbyB8fCAwKSA+IDAgPyAnYmFkJyA6ICcnKSArCiAgICBybGluZSgnU09VUkNFJywgJ0VJQSDigJQgV2Vla2x5IEhlYXRpbmcgT2lsIGFuZCBQcm9wYW5lIFByaWNlcyAoU0hPUFApJykgKwogICAgJzwvZGl2PicgKwogICAgJzxwIGNsYXNzPSJub3RlIj5TYW1lIGJhc2lzIGFuZCBjYWRlbmNlIGFzIHRoZSBvaWwgYmVuY2htYXJrOiBhIHN0YXRld2lkZSBzdXJ2ZXkgYXZlcmFnZSwgdGF4ZXMgJyArCiAgICAnZXhjbHVkZWQg4oCUIGEgYmVuY2htYXJrLCBub3QgYSBxdW90ZS4gUHJvcGFuZSBwcmljaW5nIGlzIGV2ZW4gbGVzcyB2aXNpYmxlIHRoYW4gb2lsICh0YW5rIGFycmFuZ2VtZW50cyAnICsKICAgICdhbmQgZGVhbGVyLXNwZWNpZmljIGZlZXMpLCB3aGljaCBpcyBleGFjdGx5IHdoeSB0aGUgZGlzY2xvc3VyZSByaWdodHMgYmVsb3cgbWF0dGVyLjwvcD4nOwp9CgpmdW5jdGlvbiBpbml0KCkgewogIGZldGNoKCdkYXRhL3ByaWNlcy5qc29uJykudGhlbihyID0+IHIuanNvbigpKS50aGVuKGRhdGEgPT4gewogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2JlbmNobWFyay1oZXJvJykuaW5uZXJIVE1MID0gcmVuZGVySGVybyhkYXRhLmhlYXRpbmdfb2lsKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd0cmVuZCcpLmlubmVySFRNTCA9IHJlbmRlclRyZW5kKGRhdGEpOwogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2ZhaXItYmFuZHMnKS5pbm5lckhUTUwgPSByZW5kZXJCYW5kcyhkYXRhKTsKICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdwcm9wYW5lLWJlbmNobWFyaycpLmlubmVySFRNTCA9IHJlbmRlclByb3BhbmUoZGF0YS5wcm9wYW5lKTsKICAgIGlmIChkYXRhLmNoZWNrZWRfZGF0ZSkgewogICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY2hlY2tlZC1kYXRlJykudGV4dENvbnRlbnQgPSBkYXRhLmNoZWNrZWRfZGF0ZTsKICAgIH0KICB9KS5jYXRjaChlcnIgPT4gewogICAgY29uc3QgYm94ID0gJzxwIGNsYXNzPSJlcnJvci1ib3giPiEhIERBVEEgRkFJTEVEIFRPIExPQUQuIFRoaXMgcGFnZSByZWFkcyBkYXRhL3ByaWNlcy5qc29uIOKAlCAnICsKICAgICAgJ29wZW4gaXQgdGhyb3VnaCBhIGxvY2FsIHdlYiBzZXJ2ZXIsIG5vdCBhcyBhIGZpbGU6Ly8gcGFnZS4gU2VlIEJVSUxEX05PVEVTLm1kIGZvciBwcmV2aWV3ICcgKwogICAgICAnaW5zdHJ1Y3Rpb25zLiBVbnRpbCB0aGUgZGF0YSBsb2FkcywgdHJlYXQgZXZlcnkgcHJpY2Ugb24gdGhpcyBwYWdlIGFzIG5vdCBjb25maXJtZWQgYW5kIGNoZWNrICcgKwogICAgICAndGhlIEVJQSBzZXJpZXMgZGlyZWN0bHkuPC9wPic7CiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYmVuY2htYXJrLWhlcm8nKS5pbm5lckhUTUwgPSBib3g7CiAgICBjb25zb2xlLmVycm9yKGVycik7CiAgfSk7Cn0KCmlmICh0eXBlb2YgZG9jdW1lbnQgIT09ICd1bmRlZmluZWQnKSB7CiAgaWYgKGRvY3VtZW50LnJlYWR5U3RhdGUgPT09ICdsb2FkaW5nJykgewogICAgZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcignRE9NQ29udGVudExvYWRlZCcsIGluaXQpOwogIH0gZWxzZSB7CiAgICBpbml0KCk7CiAgfQp9CgppZiAodHlwZW9mIG1vZHVsZSAhPT0gJ3VuZGVmaW5lZCcgJiYgbW9kdWxlLmV4cG9ydHMpIHsKICBtb2R1bGUuZXhwb3J0cyA9IHsgZm10UHJpY2UsIGZtdFByaWNlMywgZm10Q2hhbmdlLCBvck5vdENvbmZpcm1lZCwgZm10RGF0ZUxvbmcsIGZtdERhdGVTaG9ydCwgYmFuZFJhbmdlIH07Cn0K
+'use strict';
+/* ============================================================
+   RI OIL CHECK — app logic
+   Rules enforced here (same standard as the sibling RI Rate
+   Check build):
+   - Every price on the page comes from data/prices.json, which
+     is sourced from EIA's published SHOPP series (Weekly Heating
+     Oil and Propane Prices). Nothing is hard-coded except the
+     documented dispersion offsets (10–50¢ buying-group range;
+     30–70¢ deepest COD postings), and those are labeled on the
+     page as documented ranges / computed guides — never as live
+     dealer prices.
+   - Any field the JSON stores as null renders as
+     "not confirmed" — following the electricity site's pattern.
+     If a benchmark figure cannot be verified, the site says so
+     instead of estimating one.
+   - Prior-week and year-ago values stored in the JSON are
+     DERIVED from EIA's published change columns (current value
+     minus the published change) and are labeled as derived on
+     the page; EIA may revise prior-week values.
+   - No dealer listings, no dealer-attributed prices, no
+     referral/affiliate links, no enrollment or order buttons.
+   ============================================================ */
+
+function fmtPrice(n) {
+  // 6.304 -> "$6.30" (display), full precision handled by fmtPrice3
+  return '$' + Number(n).toFixed(2);
+}
+
+function fmtPrice3(n) {
+  // EIA publishes to 3 decimals: 6.304 -> "$6.304"
+  return '$' + Number(n).toFixed(3);
+}
+
+function fmtChange(n) {
+  // signed dollars -> "+17.8¢" under a dollar, "+$2.67" at/above
+  if (n === null || n === undefined) return 'not confirmed';
+  const sign = n < 0 ? '−' : '+';
+  const abs = Math.abs(n);
+  if (abs < 1) return sign + (abs * 100).toFixed(1) + '¢';
+  return sign + '$' + abs.toFixed(2);
+}
+
+function orNotConfirmed(v, format) {
+  if (v === null || v === undefined) return 'not confirmed';
+  return format ? format(v) : String(v);
+}
+
+function fmtDateLong(iso) {
+  // "2026-10-12" -> "Monday, October 12, 2026" (UTC-safe)
+  if (!iso) return 'not confirmed';
+  const months = ['January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'];
+  const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+  const d = new Date(iso + 'T00:00:00Z');
+  if (isNaN(d.getTime())) return iso;
+  return days[d.getUTCDay()] + ', ' + months[d.getUTCMonth()] + ' ' +
+    d.getUTCDate() + ', ' + d.getUTCFullYear();
+}
+
+function fmtDateShort(iso) {
+  if (!iso) return 'not confirmed';
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun',
+    'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  const d = new Date(iso + 'T00:00:00Z');
+  if (isNaN(d.getTime())) return iso;
+  return months[d.getUTCMonth()] + ' ' + d.getUTCDate() + ', ' + d.getUTCFullYear();
+}
+
+/* ============ browser-only rendering below ============ */
+
+function rline(k, v, vcls) {
+  return '<div class="rline"><span class="k">' + k + '</span><span class="dots"></span>' +
+    '<span class="v' + (vcls ? ' ' + vcls : '') + '">' + v + '</span></div>';
+}
+
+function renderHero(oil) {
+  if (!oil || oil.value === null || oil.value === undefined) {
+    return '<p class="hero-price">RI AVERAGE THIS WEEK — not confirmed</p>' +
+      '<p class="warning-box"><strong>BENCHMARK NOT CONFIRMED:</strong> the current RI residential ' +
+      'heating oil figure could not be verified on EIA&rsquo;s published series this week. See the ' +
+      'EIA series directly: <a href="https://www.eia.gov/dnav/pet/PET_PRI_WFR_DCUS_SRI_W.htm" rel="noopener">' +
+      'EIA — Rhode Island Weekly Heating Oil and Propane Prices</a>. We never estimate this number.</p>';
+  }
+  return '<p class="hero-price">RI AVERAGE THIS WEEK — ' + fmtPrice(oil.value) + '/gal' +
+    ' <span class="note">(residential heating oil)</span></p>' +
+    '<div class="readout">' +
+    rline('AS OF (COLLECTED)', fmtDateLong(oil.week_of), 'hot') +
+    rline('PUBLISHED', fmtDateLong(oil.published)) +
+    rline('FULL-PRECISION FIGURE', fmtPrice3(oil.value) + '/gal') +
+    rline('SOURCE', 'EIA — Weekly Heating Oil and Propane Prices (SHOPP)') +
+    '</div>';
+}
+
+function renderTrend(data) {
+  const oil = data.heating_oil || {};
+  const ws = data.wholesale_heating_oil || {};
+  let html = '';
+  html += rline('THIS WEEK (' + fmtDateShort(oil.week_of).toUpperCase() + ')',
+    orNotConfirmed(oil.value, v => fmtPrice3(v) + '/gal'), 'hot');
+  html += rline('LAST WEEK', orNotConfirmed(oil.prior_week_value, v => fmtPrice3(v) + '/gal (derived — see note)'));
+  html += rline('CHANGE VS LAST WEEK', fmtChange(oil.change_vs_prior_week),
+    (oil.change_vs_prior_week || 0) > 0 ? 'bad' : '');
+  html += rline('SAME WEEK LAST YEAR', orNotConfirmed(oil.year_ago_value, v => fmtPrice3(v) + '/gal (derived — see note)'));
+  html += rline('CHANGE VS LAST YEAR', fmtChange(oil.change_vs_year_ago),
+    (oil.change_vs_year_ago || 0) > 0 ? 'bad' : '');
+  html += rline('RI WHOLESALE (CONTEXT ONLY — NOT A RETAIL PRICE)',
+    orNotConfirmed(ws.value, v => fmtPrice3(v) + '/gal'));
+  html += '<p class="note">&gt; &ldquo;Derived&rdquo; values are arithmetic on EIA&rsquo;s own published ' +
+    'change columns (this week&rsquo;s value minus the published change), not separate survey figures. ' +
+    'EIA notes that values for the previous week may be revised to account for late submissions and ' +
+    'corrections. Wholesale is shown only as a direction indicator — it is never blended into the ' +
+    'retail benchmark, and no household can buy at the wholesale price.</p>';
+  return html;
+}
+
+function bandRange(benchValue, band) {
+  if (benchValue === null || benchValue === undefined) return 'not confirmed';
+  if (band.offset_low === 0 || band.offset_low === null) {
+    return fmtPrice(benchValue) + '/gal and up';
+  }
+  const low = benchValue + band.offset_low;
+  const high = benchValue + band.offset_high;
+  return fmtPrice(low) + ' – ' + fmtPrice(high) + '/gal';
+}
+
+function renderBands(data) {
+  const bench = data.heating_oil ? data.heating_oil.value : null;
+  const bands = (data.fair_price_bands && data.fair_price_bands.bands) || [];
+  let html = '';
+  bands.forEach(b => {
+    const typeBadge = b.basis_type === 'documented range'
+      ? '<span class="badge ok">DOCUMENTED RANGE</span>'
+      : '<span class="badge warn">COMPUTED GUIDE</span>';
+    html += '<article class="card">' +
+      '<div class="card-top"><span class="card-name">' + b.label + '</span>' +
+      '<span class="band-range">' + bandRange(bench, b) + '</span></div>' +
+      '<div>' + typeBadge +
+      '<span class="badge">NOT A LIVE DEALER PRICE</span></div>' +
+      '<p>' + b.description + '</p>' +
+      '<p class="note">Source: <a href="' + b.source_url + '" rel="noopener">' + b.source_name + '</a></p>' +
+      '</article>';
+  });
+  if (data.fair_price_bands && data.fair_price_bands.note) {
+    html += '<p class="note">' + data.fair_price_bands.note + '</p>';
+  }
+  return html;
+}
+
+function renderPropane(p) {
+  if (!p || p.value === null || p.value === undefined) {
+    return '<p class="big"><strong>RI residential propane benchmark: not confirmed — see EIA series.</strong> ' +
+      'The current RI propane figure could not be verified on EIA&rsquo;s published series this week, so this ' +
+      'site prints no number rather than an estimate. The series itself: ' +
+      '<a href="https://www.eia.gov/dnav/pet/PET_PRI_WFR_DCUS_SRI_W.htm" rel="noopener">EIA — Rhode Island ' +
+      'Weekly Heating Oil and Propane Prices</a>. Everything below about your legal rights stands regardless ' +
+      'of the benchmark.</p>';
+  }
+  return '<p class="big">The same SHOPP survey publishes one statewide average for <strong>residential ' +
+    'propane</strong>:</p>' +
+    '<p class="hero-price">RI PROPANE AVERAGE — ' + fmtPrice(p.value) + '/gal</p>' +
+    '<div class="readout">' +
+    rline('AS OF (COLLECTED)', fmtDateLong(p.week_of), 'hot') +
+    rline('PUBLISHED', fmtDateLong(p.published)) +
+    rline('FULL-PRECISION FIGURE', fmtPrice3(p.value) + '/gal') +
+    rline('LAST WEEK', orNotConfirmed(p.prior_week_value, v => fmtPrice3(v) + '/gal (derived)')) +
+    rline('CHANGE VS LAST WEEK', fmtChange(p.change_vs_prior_week),
+      (p.change_vs_prior_week || 0) > 0 ? 'bad' : '') +
+    rline('SAME WEEK LAST YEAR', orNotConfirmed(p.year_ago_value, v => fmtPrice3(v) + '/gal (derived)')) +
+    rline('CHANGE VS LAST YEAR', fmtChange(p.change_vs_year_ago),
+      (p.change_vs_year_ago || 0) > 0 ? 'bad' : '') +
+    rline('SOURCE', 'EIA — Weekly Heating Oil and Propane Prices (SHOPP)') +
+    '</div>' +
+    '<p class="note">Same basis and cadence as the oil benchmark: a statewide survey average, taxes ' +
+    'excluded — a benchmark, not a quote. Propane pricing is even less visible than oil (tank arrangements ' +
+    'and dealer-specific fees), which is exactly why the disclosure rights below matter.</p>';
+}
+
+function init() {
+  fetch('data/prices.json').then(r => r.json()).then(data => {
+    document.getElementById('benchmark-hero').innerHTML = renderHero(data.heating_oil);
+    document.getElementById('trend').innerHTML = renderTrend(data);
+    document.getElementById('fair-bands').innerHTML = renderBands(data);
+    document.getElementById('propane-benchmark').innerHTML = renderPropane(data.propane);
+    if (data.checked_date) {
+      document.getElementById('checked-date').textContent = data.checked_date;
+    }
+  }).catch(err => {
+    const box = '<p class="error-box">!! DATA FAILED TO LOAD. This page reads data/prices.json — ' +
+      'open it through a local web server, not as a file:// page. See BUILD_NOTES.md for preview ' +
+      'instructions. Until the data loads, treat every price on this page as not confirmed and check ' +
+      'the EIA series directly.</p>';
+    document.getElementById('benchmark-hero').innerHTML = box;
+    console.error(err);
+  });
+}
+
+if (typeof document !== 'undefined') {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { fmtPrice, fmtPrice3, fmtChange, orNotConfirmed, fmtDateLong, fmtDateShort, bandRange };
+}
