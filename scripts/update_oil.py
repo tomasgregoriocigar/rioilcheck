@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""scripts/update_oil.py — RI Oil Check nightly EIA update (v2, Nov 26, 2026)
+"""scripts/update_oil.py — RI Oil Check nightly EIA update (v3, Nov 26, 2026)
 DRAFT ONLY — not seeded. Paste path in repo: scripts/update_oil.py
 
 Sources, in order:
@@ -23,6 +23,11 @@ and covered by tests/test_update_oil.py against the known-good week:
   changes vs prior week -0.272 / -0.007 / -0.379; vs year ago +1.526 / +0.553 / +1.509.
 
 All date stamps use America/New_York.
+
+v3 changes (Tomás, Nov 26, 2026): every marker pair for a key is rewritten
+and the pair count asserted; a missing prior-week or year-ago row writes
+null and the page hides that change instead of failing the run; both
+sources are rounded to 3 places before the agreement comparison.
 
 index.html is rewritten ONLY through marked placeholders:
   <!--AUTO:checked_date-->...<!--/AUTO-->, <!--AUTO:week_of_long-->...,
@@ -111,6 +116,15 @@ def parse_eia_xls(data: bytes) -> dict:
     if not rows:
         raise ValueError("EIA XLS: no data rows")
     rows.sort()
+    return summarize_rows(rows)
+
+def summarize_rows(rows):
+    """rows: sorted [(date, [heating_oil, wholesale, propane]), ...].
+    v3 rule (Tomás, Nov 26, 2026): if the prior-week or year-ago row is
+    missing, that field and its change are written as None (null in the
+    JSON, and the page hides the change) — the run does NOT fail. Only a
+    missing CURRENT week is fatal, and that cannot happen here because
+    the caller compares the current week across two sources first."""
     latest_d, latest_v = rows[-1]
     prior = dict(rows)
     out = {"week_of": latest_d.isoformat()}
@@ -120,27 +134,31 @@ def parse_eia_xls(data: bytes) -> dict:
         i = ("heating_oil", "wholesale", "propane").index(fuel)
         pw = prior.get(latest_d - timedelta(days=7))
         ya = prior.get(latest_d - timedelta(days=364))
-        if pw is None or ya is None:
-            raise ValueError("EIA XLS: prior-week or year-ago row missing")
-        out[fuel]["prior_week_value"] = float(pw[i])
-        out[fuel]["year_ago_value"] = float(ya[i])
-        out[fuel]["change_vs_prior_week"] = round(out[fuel]["value"] - pw[i], 3)
-        out[fuel]["change_vs_year_ago"] = round(out[fuel]["value"] - ya[i], 3)
+        out[fuel]["prior_week_value"] = float(pw[i]) if pw is not None else None
+        out[fuel]["year_ago_value"] = float(ya[i]) if ya is not None else None
+        out[fuel]["change_vs_prior_week"] = (
+            round(out[fuel]["value"] - pw[i], 3) if pw is not None else None)
+        out[fuel]["change_vs_year_ago"] = (
+            round(out[fuel]["value"] - ya[i], 3) if ya is not None else None)
     return out
 
 # ---------- EIA API v2 parser (primary when a key is provisioned) ----------
 def parse_eia_api(payload: dict, fuel: str) -> dict:
     rows = payload["response"]["data"]
     rows = sorted(rows, key=lambda r: r["period"])
-    if len(rows) < 53:
-        raise ValueError(f"EIA API: only {len(rows)} rows for {fuel}")
-    latest, prior_w, year_a = rows[-1], rows[-2], rows[-53]
+    if not rows:
+        raise ValueError(f"EIA API: no rows for {fuel}")
+    latest = rows[-1]
+    prior_w = rows[-2] if len(rows) >= 2 else None
+    year_a = rows[-53] if len(rows) >= 53 else None
     v = float(latest["value"])
     return {"week_of": latest["period"], "value": v,
-            "prior_week_value": float(prior_w["value"]),
-            "year_ago_value": float(year_a["value"]),
-            "change_vs_prior_week": round(v - float(prior_w["value"]), 3),
-            "change_vs_year_ago": round(v - float(year_a["value"]), 3)}
+            "prior_week_value": float(prior_w["value"]) if prior_w else None,
+            "year_ago_value": float(year_a["value"]) if year_a else None,
+            "change_vs_prior_week": (round(v - float(prior_w["value"]), 3)
+                                     if prior_w else None),
+            "change_vs_year_ago": (round(v - float(year_a["value"]), 3)
+                                   if year_a else None)}
 
 def fetch_api(key: str) -> dict:
     out, weeks = {}, set()
@@ -159,7 +177,10 @@ def fetch_api(key: str) -> dict:
 
 # ---------- agreement + apply ----------
 def core(d: dict) -> tuple:
-    return (d["week_of"],) + tuple(d[f]["value"] for f in ("heating_oil", "propane", "wholesale"))
+    # v3 rule: BOTH sources are rounded to 3 places before comparing, so a
+    # 5.4040 vs 5.404 representation difference can never fail the check.
+    return (d["week_of"],) + tuple(round(float(d[f]["value"]), 3)
+                                   for f in ("heating_oil", "propane", "wholesale"))
 
 def rewrite_index(html: str, values: dict) -> str:
     # A marker pair may occur several times (week and price appear in two
@@ -169,10 +190,11 @@ def rewrite_index(html: str, values: dict) -> str:
         pat = re.compile(rf'(<!--AUTO:{key}-->).*?(<!--/AUTO-->)', re.S)
         if not pat.search(html):
             raise ValueError(f"index.html: marker pair AUTO:{key} missing — refusing to write")
+        n_pairs = len(pat.findall(html))
         html = pat.sub(lambda m: f"{m.group(1)}{val}{m.group(2)}", html)
         landed = re.findall(rf'<!--AUTO:{key}-->(.*?)<!--/AUTO-->', html, re.S)
-        assert landed and all(v == val for v in landed), \
-            f"index.html: {key} rewrite did not land everywhere ({landed!r} != {val!r})"
+        assert len(landed) == n_pairs and all(v == val for v in landed), \
+            f"index.html: {key} rewrite count/landing wrong ({len(landed)} of {n_pairs} pairs hold {val!r})"
     return html
 
 def main() -> int:
