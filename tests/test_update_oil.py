@@ -30,6 +30,8 @@ class TestPageParser(unittest.TestCase):
             self.assertAlmostEqual(self.d[fuel]["change_vs_prior_week"], cpw, places=3, msg=fuel)
             self.assertAlmostEqual(self.d[fuel]["change_vs_year_ago"], cya, places=3, msg=fuel)
 
+@unittest.skipUnless((FIX / "eia_ri_series.xls").exists(),
+                     "binary XLS fixture not in repo (text-only push route)")
 class TestXlsParser(unittest.TestCase):
     def setUp(self):
         self.d = u.parse_eia_xls((FIX / "eia_ri_series.xls").read_bytes())
